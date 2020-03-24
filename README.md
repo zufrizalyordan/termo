@@ -1,4 +1,4 @@
-# Cara Buat Termometer Digital Non Kontak di rumah sendiri
+# Cara Rakit Termometer Digital Non Kontak di rumah sendiri
 
 ## Kebutuhan
 1. Sensor IR:
