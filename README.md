@@ -12,7 +12,7 @@ Untuk pengolahan input dari sensor tersebut, saya mencari harga yang paling mura
 
 Untuk menampilkan hasil pengukuran, maka kita akan membutuhkan komponen LCD/OLED.
 
-Dari hasil riset saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua komponen yang dibutuhkan akan disesuaikan dengan interface tersebut.
+Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua komponen yang dibutuhkan akan disesuaikan dengan antarmuka tersebut.
 
 ## Kebutuhan
 1. Sensor IR: MLX90614
@@ -24,7 +24,10 @@ Dari hasil riset saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua kom
 
 ## Perakitan Komponen
 1. Solder komponen disesuaikan input/output dengan kabel yang berbeda warna
-2. Ikuti gambar dibawah (TODO: foto komponen)
+2. Petunjuk pemasangan kabel dan komponen bisa dicek pada gambar dibawah
+![alt text](assets/digisparkattiny85.jpg)
+![alt text](assets/mlx90614.jpg)
+![alt text](assets/oled.jpg)
 
 ## Langkah-langkah (Untuk MacOSX)
 1. Beli komponen untuk dirakit
@@ -41,7 +44,7 @@ Dari hasil riset saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua kom
 ![alt text](assets/digispark.png)
 5. Pilih tipe Board
 ![alt text](assets/digisparkboard.png)
-6. Unduh kode [TODO: link kode]. kemudian klik untuk membukanya di Arduino IDE
+6. Unduh kode pada folder `code/termo.ino`. kemudian klik untuk membukanya di Arduino IDE
 7. Compile terlebih dahulu untuk verifikasi kode. [TODO: masukkan screenshot]
 8. Unggah kode ke Digispark ATTiny. lihat "Unggah Kode"
 
