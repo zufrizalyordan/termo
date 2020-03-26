@@ -43,7 +43,9 @@ Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua
 4. Cari Digispark pada input
 ![alt text](assets/digispark.png)
 5. Pilih tipe Board
+
 ![alt text](assets/digisparkboard.png)
+
 6. Unduh kode pada folder `code/termo.ino`. kemudian klik untuk membukanya di Arduino IDE
 7. Compile terlebih dahulu untuk verifikasi kode. [TODO: masukkan screenshot]
 8. Unggah kode ke Digispark ATTiny. lihat "Unggah Kode"
