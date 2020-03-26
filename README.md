@@ -25,9 +25,10 @@ Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua
 ## Perakitan Komponen
 1. Solder komponen disesuaikan input/output dengan kabel yang berbeda warna
 2. Petunjuk pemasangan kabel dan komponen bisa dicek pada gambar dibawah
-![alt text](assets/digisparkattiny85.jpg)
-![alt text](assets/mlx90614.jpg)
-![alt text](assets/oled.jpg)
+![Digispark ATTiny85](assets/digisparkattiny85.jpg)
+![MLX90614](assets/mlx90614.jpg)
+![OLED](assets/oled.jpg)
+3. Video perakitan komponen: https://youtu.be/56fTAdGLMkY
 
 ## Langkah-langkah (Untuk MacOSX)
 1. Beli komponen untuk dirakit
@@ -46,8 +47,8 @@ Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua
 
 ![alt text](assets/digisparkboard.png)
 
-6. Unduh kode pada folder `code/termo.ino`. kemudian klik untuk membukanya di Arduino IDE
-7. Compile terlebih dahulu untuk verifikasi kode. [TODO: masukkan screenshot]
+6. Unduh kode pada folder `code/termo.ino` -> https://github.com/zufrizalyordan/termo/blob/master/code/termo.ino . kemudian klik untuk membukanya di Arduino IDE
+7. Compile terlebih dahulu untuk verifikasi kode. ![alt text](assets/verify.png)
 8. Unggah kode ke Digispark ATTiny. lihat "Unggah Kode"
 
 ## Unggah Kode
@@ -68,8 +69,8 @@ Silahkan pilih sendiri mau beli dari toko yang mana ya.
 - Kode akan mengambil 5 pengukuran, kemudian menampilkan nilai maksimal dari hasil pengukuran tersebut.
 
 ### Foto-foto
-- Hasil pengukuran suhu badan
-- Hasil pengukuran suhu kompor
-- Menggunakan kabel ekstensi USB dan charger HP
-- Menggunakan kabel ekstensi USB dan Powerbank
-- Menggunakan Powerbank langsung
+- [TODO] Hasil pengukuran suhu badan
+- [TODO] Hasil pengukuran suhu kompor
+- [TODO] Menggunakan kabel ekstensi USB dan charger HP
+- [TODO] Menggunakan kabel ekstensi USB dan Powerbank
+- [TODO] Menggunakan Powerbank langsung
