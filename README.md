@@ -1,4 +1,7 @@
-# Cara Rakit Termometer Digital Non Kontak di rumah sendiri
+# Cara Rakit Termometer Digital Non Kontak di rumah
+
+Ini adalah prototipe, casing silahkan desain sendiri
+
 ## Kenapa
 Akhir-akhir ini harga termometer digital non-kontak semakin mahal. Selain itu ada juga yang memang terdesak karena tidak ada barang di daerahnya. Ada juga yang membeli online sampai ke negeri Cina, menunggu pengiriman yang cukup lama.
 
@@ -53,8 +56,8 @@ Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua
 
 ## Unggah Kode
 - Pastikan Digispark tidak tercolok ke USB
-- Unggah kode [TODO: masukkan screenshot]
-- Kode berhasil ketika tidak ada pesan kesalahan dan layar OLED menampilkan suhu
+- Unggah kode
+- Kode berhasil ketika tidak ada pesan kesalahan dan layar OLED berhasil menampilkan suhu
 
 ### Link cepat untuk membeli kebutuhan
 Silahkan pilih sendiri mau beli dari toko yang mana ya.
@@ -68,9 +71,6 @@ Silahkan pilih sendiri mau beli dari toko yang mana ya.
 - Saya tidak di endorse ya sama Tokopedia, cuman sering belanja disana aja.
 - Kode akan mengambil 5 pengukuran, kemudian menampilkan nilai maksimal dari hasil pengukuran tersebut.
 
-### Foto-foto
-- [TODO] Hasil pengukuran suhu badan
-- [TODO] Hasil pengukuran suhu kompor
-- [TODO] Menggunakan kabel ekstensi USB dan charger HP
-- [TODO] Menggunakan kabel ekstensi USB dan Powerbank
-- [TODO] Menggunakan Powerbank langsung
+### Video
+- Perakitan: https://www.youtube.com/watch?v=56fTAdGLMkY
+- Testing:

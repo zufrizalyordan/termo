@@ -1,42 +1,50 @@
-/* https://www.14core.com/wiring-the-mlx90614-infrared-contactless-temperature-measurement-sensor-with-microcontroller/ */
-#include<i2cmaster.h>
+/*
+  @zufrizalyordan
+  zufrizalyordan@gmail.com
+*/
 
-int i2Cbus = 0x58<<1;
-int lowData = 0;
-int highData = 0
-int percentage = 0;
-int myDelay = 1000;
+#include <TinyWireM.h>
+#include <Adafruit_MiniMLX90614.h>
+#include <Tiny4kOLED.h>
 
-double tFactor = 0.02; // 0.02 Deg per MR of MLX90614
-double tData = 0x0000; // 0 data out
+double stemp = 0;
+double amb = 0;
 
-void setup(){
-    Serial.begin(9600);
-    Serial.println("14CORE | Infrared Temperature Sensor Test Code");
-    Serial.println("Starting....");
-    Serial.pirntln("----------------------------------------------");
-    delay(200);
-    i2c_init(); //Initialing i2c Bus
-    PORT = (1 << PORT4) | (1 << PORTCS); //Enabled Pullup
+Adafruit_MiniMLX90614 mlx = Adafruit_MiniMLX90614();
+
+void setup()
+{
+    mlx.begin();
+
+    oled.begin();
+    oled.setFont(FONT8X16);
+    oled.clear();
+    oled.on();
+    oled.switchRenderFrame();
 }
 
-void loop(){
+void loop()
+{
+    updateDisplay();
+    delay(2500);
+}
 
-    i2c_start_wait(i2cBus + I2C_READ);
-    lowData = i2c_readAck();
-    highData = i2c_readAck();
-    percentage = i2c_readNak();
-    i2c_stop();
+void updateDisplay()
+{
+    oled.clear();
+    // Ambil pembacaan dan simpan nilai tersebut
+    for (int x = 0; x < 10; x++)
+    {
+        stemp = mlx.readObjectTempC();
+        amb = mlx.readAmbientTempC();
+    }
 
-    Raw = (double)(((highData & 0x007F) < 8)+lowData); //
-    Raw = (Raw * tFactor) - 0.01;
-    float FinalCelsius = Raw - 273.15;
-    float FinalFahrenheit = (FinalCelsius * 1.8) + 32;
+    oled.print("Lokasi: ");
+    oled.print(amb);
+    oled.print("C");
 
-    Serial.println("Temperature in Celsius: ");
-    Serial.print(FinalCelsius);
-    Serial.println("Temperature in Fahrenheit: ");
-    Serial.print(FinalFahrenheit);
-    delay(myDelay);
-    
-} 
+    oled.print("\nBadan: ");
+    oled.print(stemp);
+    oled.print("C");
+    oled.switchFrame();
+}
