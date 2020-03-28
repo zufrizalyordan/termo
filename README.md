@@ -41,17 +41,17 @@ Dari hasil baca-baca saya, MLX90614 menggunakan I2C untuk komunikasi. Jadi semua
 ## Pemrograman Mikroprosesor
 1. Unduh program Arduino IDE sesuai laptop/komputer kalian di https://www.arduino.cc/en/main/software. kemudian install.
 2. Setelah berhasil install, buka Arduino Preference. Lihat input "Additional Boards Manager URL:" dan masukkan http://digistump.comapackage_digistump_index.json
-![alt text](assets/boardurl.png)
+![board url](assets/boardurl.png)
 3. Buka Tools - Board Manager
-![alt text](assets/tools-boardsmanager.png)
+![Boards manager](assets/tools-boardsmanager.png)
 4. Cari Digispark pada input
-![alt text](assets/digispark.png)
+![Digispark](assets/digispark.png)
 5. Pilih tipe Board
 
 ![alt text](assets/digisparkboard.png)
 
 6. Unduh kode pada folder `code/termo.ino` -> https://github.com/zufrizalyordan/termo/blob/master/code/termo.ino . kemudian klik untuk membukanya di Arduino IDE
-7. Compile terlebih dahulu untuk verifikasi kode. ![alt text](assets/verify.png)
+7. Compile terlebih dahulu untuk verifikasi kode. ![verify](assets/verify.png)
 8. Unggah kode ke Digispark ATTiny. lihat "Unggah Kode"
 
 ## Unggah Kode
@@ -74,3 +74,8 @@ Silahkan pilih sendiri mau beli dari toko yang mana ya.
 ### Video
 - Perakitan: https://www.youtube.com/watch?v=56fTAdGLMkY
 - Testing:
+
+### Foto-Foto
+![Top](assets/termo-top.jpg)
+![Bottom](assets/termo-front.jpg)
+![Front](assets/termo-bottom.jpg)
