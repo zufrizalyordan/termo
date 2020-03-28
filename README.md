@@ -73,7 +73,7 @@ Silahkan pilih sendiri mau beli dari toko yang mana ya.
 
 ### Video
 - Perakitan: https://www.youtube.com/watch?v=56fTAdGLMkY
-- Testing:
+- Casing & Testing: https://youtu.be/uesPk8TWKTU
 
 ### Foto-Foto
 ![Top](assets/termo-top.jpg)
